@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/site.webmanifest">
+	<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<title>Demo</title>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ul>
+						<li><a href="index.html">Назад</a></li>
+					</ul>
+				</div>
+				<div class="col-12">
+					<h1>Привязываем политику к группе компьютеров</h1>
+					<img src="./img/Группа компьютеров.JPG" class="img-fluid" alt="">
+					<p>Выбираем нашу созданную ранее политику</p>
+					
+					<h2>Правило 1</h2>
+					<p>Запретить создание снимков экрана в табличных процессорах (Excel или OpenOffice Calc) и калькуляторе для предотвращения утечки секретных расчетов и баз данных.   </p>
+					<img src="./img/Добавление приложение для запрета.JPG" class="img-fluid" alt="">
+					<p>Заходим в приложение и создаем, в разделе «Списки приложений», новый список. <br> После мы  перетаскиваем туда наш наш Excel и калькулятор</p>
+					<img src="./img/Запрет скринов.JPG" class="img-fluid" alt="">
+					<p>Далее создаем правило для запрета скриншотов. Для выбора нашего приложения, <br> нажимаем на флажок «Если запущены приложения»</p>
+					<img src="./img/Выбираем приложение.JPG"  class="img-fluid" alt="">
+					<p>Выбиреам наш список, который мы создали ранее.</p>
+
+					<h2>Правило 2 </h2>
+					<p>Необходимо запретить запись файлов на все съемные носители информации (флешки), <br> оставив возможность чтения и копирования с них.</p>
+					<img src="./img/Чтение флешки.JPG" class="img-fluid" alt="">
+					<p>При создание правила, выбираем перехватчик «Device Monitor» и тип устройства <br> «Съемное устройство и хранение». Далее выбираем доступ «Только для чтения»</p>
+					
+					<h2>Правило 3 </h2>
+					<p>С учетом ранее созданной политики необходимо разрешить запись файлов на доверенный носитель. <br> Запрет на запись на остальные носители оставить в силе.</p>
+					<img src="./img/Идентификатор флешки.JPG" alt="" class="img-fluid">
+					<p>Для получения идентификатора флешки можно зайти в раздел  «Собыитя» и найти неадвнее нарушение. <br> В примере  правило будет называться «Задание 12» , а также будет название операции «Запись на съемное устройство». <br> Нажимаем и получаем наш идентификатор флешки. </p>
+					<img src="./img/Белые списки.JPG" alt="" class="img-fluid">
+					<p>Далее нам надо зайти в раздел «Белые cписки»</p>
+					<img src="./img/Белый список для флешки.JPG" alt="" class="img-fluid">
+					<p>Создаем новый белый списко, в наименовании выбираем нашего нарушителя. <br> После нажимаем на кнопку «Добавить», выбираем тип, вводим наш идентификатор <br> и нажимаем на кнопку «Провести».  </p>
+					<img src="./img/Экземпляр.JPG" alt="" class="img-fluid">
+					<p>Сохраняем и ставим галочку возле нашего экземпляра</p>
+
+					<h2>Правило 4</h2>
+					<p>Исключить приложение cmd и powershell из перехвата Device Monitor. <br> Необходимо учесть разные версии для различных архитектур </p>
+					<p>Нужно создать белый список и внести туда cmd и powershell</p>
+					<h2>Правило 5</h2>
+					<p>1) Запретить сотрудникам в использование CD/DVD</p>
+					<img src="./img/Запрет использование дисковода.JPG" class="img-fluid" alt="">
+					<p>Запрет использвоания CD/DVD</p>
+					<p>2) Временный доступ сотруднику</p>
+					<img src="./img/Запрос временного доступа по телефонеу.JPG" class="img-fluid" alt="">
+					<p>Запрашиваем времменный доступ у сотрудника по телефону</p>
+					<img src="./img/Код запроса.JPG" class="img-fluid" alt="">
+					<p>Код запроса</p>
+					<img src="./img/Получение кода для времменного доступа.JPG" class="img-fluid" alt="">
+					<p>Получение кода для времменого доступа</p>
+
+					<img src="./img/Ввод кода запроса.JPG" class="img-fluid" alt="">
+					<p>До этого шага жмём далее. После вводим учетную запись агента, <br> выбираем тип устройства и вводим код запроса, который был ранее.</p>
+
+					<img src="./img//Код для сотрудника.JPG" class="img-fluid" alt="">
+					<p>Код который долженн ввести сотрудник</p>
+
+					<h2>Правило 6</h2>
+					<p>Необходимо поставить на контроль буфер обмена <br> в текстовых процессорах (Word или Writer или Wordpad). </p>
+					<p>Заходим раздел «Списки приложений», создаем новый список  и добавляем туда Word, Wordpad и Writer.</p>
+					<img src="./img/Контроль буфера в текстовых процессорах.JPG"  class="img-fluid" alt="">
+					<p>Далее создаем новое правило, выбираем наш список приложений, <br> который мы создали ранее. Результа на рисунке выше</p>
+					<h2>Правило 7</h2>
+					<p></p>
+					<p>Заходим раздел «Списки приложений», создаем новый список  и добавляем туда «mstsc.exe».</p>
+					<img src="./img/Запрет на удаленное подключение.JPG" alt="" class="img-fluid">
+					<p>Создаем праивло как показано на рисунке выше</p>
+					<img src="./img/Политика на устройства.JPG" alt="" class="img-fluid">
+					<p>Заходим в  «Политика на устройстве» и создаем правилол в соответвисе с рисунком выше.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
